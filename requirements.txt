@@ -1,0 +1,8 @@
+os
+pandas==1.3.5
+numpy==1.21.6
+subprocess
+biopython==1.79
+pymol-open-source==2.5.0
+ast
+seaborn==0.11.2
