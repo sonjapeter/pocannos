@@ -561,13 +561,12 @@ def clustering_result(df: pd.Series, output_path: os.PathLike, threshold_cluster
     folder_names = df['Class_state'].unique().tolist()
     df['gn_residues'] = df['residues_gn'].apply(lambda x: list(x.values()) if isinstance(x, dict) else [])
 
-    print(folder_names)
     
      # loop over the folder names
     for folder in folder_names:
         print("We are processing:", folder)
         # create the folder if it doesn't exist
-        current_dir = folder
+        current_dir = output_path+"/"+folder
         dir_name = current_dir+"/"
         folder_name = os.path.join(current_dir, folder)
         folder_name = folder_name+"/"
