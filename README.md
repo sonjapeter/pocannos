@@ -101,7 +101,7 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any inquiries, please contact [Your Email or GitHub Profile].
+For any inquiries, please contact sonja.peter3@hispeed.ch.
 
 
 
