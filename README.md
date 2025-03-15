@@ -31,7 +31,7 @@ cd pocannos
 ### Create, Install and Activate a Conda Environment
 
 ```bash
-conda create -n pocannos_env python=3.9 -y
+conda create -n pocannos_env python=3.9 --file requirements.txt -y
 conda activate pocannos_env
 ```
 
