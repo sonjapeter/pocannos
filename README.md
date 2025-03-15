@@ -1,4 +1,4 @@
-# GPCR POCket ANNotationS (pocannos)
+# gpcr POCket ANNotationS (pocannos)
 
 ---
 
