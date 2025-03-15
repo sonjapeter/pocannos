@@ -39,12 +39,6 @@ conda activate pocannos_env
 pip install -r requirements.txt
 ```
 
-Create a `requirements.txt` file in the repository root with the following content:
-
-```
-oa
-```
-
 ---
 
 ## External Dependencies
