@@ -47,7 +47,7 @@ This code requires access to the **GPCRdb generic residue numbering API** ([GPCR
 
 ### `pocannos.py`
 
-This script allows a user to pass a CSV file containing the residues of a pocket of interest and returns the GPCR pocannos annotations.
+This script allows a user to pass a CSV file containing the residues of a pocket of interest and returns a CSV file with the GPCR pocannos annotations in the column "Site".
 
 ```bash
 cd scripts
