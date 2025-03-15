@@ -19,6 +19,8 @@ The GPCR pocannos includes:
 
 ## Installation and Use
 
+Move to the folder in the terminal where pocannos (1GB) should be installed.
+
 ### Clone the Repository
 
 ```bash
@@ -54,6 +56,7 @@ This code requires access to the **GPCRdb generic residue numbering API** ([GPCR
 This script allows a user to pass a CSV file containing the residues of a pocket of interest and returns the GPCR pocannos annotations.
 
 ```bash
+cd scripts
 python ./pocannos.py --help
 ```
 
