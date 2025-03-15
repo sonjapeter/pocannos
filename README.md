@@ -28,17 +28,11 @@ git clone https://github.com/sonjapeter/pocannos.git
 cd pocannos
 ```
 
-### Create and Activate a Conda Environment
+### Create, Install and Activate a Conda Environment
 
 ```bash
 conda create -n pocannos_env python=3.9 -y
 conda activate pocannos_env
-```
-
-### Install Required Packages
-
-```bash
-pip install -r requirements.txt
 ```
 
 ---
