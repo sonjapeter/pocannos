@@ -39,7 +39,7 @@ conda activate pocannos_env
 
 ## External Dependencies
 
-This code requires access to the **GPCRdb generic residue numbering API** ([GPCRdb](https://gpcrdb.org/)) and **OPM reference files** included in the `opm_database` folder. For additional membrane position references, visit the **OPM database** ([OPM Reference](https://opm.phar.umich.edu/ppm_server3_cgopm)).
+This code upload structures to the **GPCRdb generic residue numbering API** ([GPCRdb](https://gpcrdb.org/)). Please modify code to poin to local version of GPCRdb if used for internal structures. The **OPM reference files** are included in the `opm_database` folder. For additional membrane position references, visit the **OPM database** ([OPM Reference](https://opm.phar.umich.edu/ppm_server3_cgopm)). 
 
 ---
 
@@ -88,7 +88,7 @@ cd scripts
 python ./pocannos.py ../data/Minimal_file_drd1.csv ../output
 ```
 
-**Side note:** The folder containing the `csv_file` should also include the corresponding `input_structure.pdb` file of interest.
+**Side note:** The folder containing the `csv_file` should also include the corresponding `input_structure.pdb` file of interest with the same file name as in the `csv_file` column called "PDB".
 
 ---
 
