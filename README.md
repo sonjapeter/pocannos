@@ -39,7 +39,7 @@ conda activate pocannos_env
 
 ## External Dependencies
 
-This code upload structures to the **GPCRdb generic residue numbering API** ([GPCRdb](https://gpcrdb.org/)). Please modify code to poin to local version of GPCRdb if used for internal structures. The **OPM reference files** are included in the `opm_database` folder. For additional membrane position references, visit the **OPM database** ([OPM Reference](https://opm.phar.umich.edu/ppm_server3_cgopm)). 
+This code upload structures to the **GPCRdb generic residue numbering API** ([GPCRdb](https://gpcrdb.org/)). Please modify code to point to the local version of GPCRdb if used for internal structures. The **OPM reference files** are included in the `opm_database` folder. For additional membrane position references, visit the **OPM database** ([OPM Reference](https://opm.phar.umich.edu/ppm_server3_cgopm)). 
 
 ---
 
