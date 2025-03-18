@@ -8,10 +8,7 @@ import ast
 from Bio.PDB import PDBParser
 import seaborn as sns
 
-#Define the GPCRDB API 
-GPCRdb_SERVER = 'https://gpcrdb.org/'
-
-def process_dataframe(csv_file_path: os.PathLike, output_folder: os.PathLike, threshold_clustering: float = None, residues_ortho: list = None):
+def process_dataframe(csv_file_path: os.PathLike, output_folder: os.PathLike, GPCRdb_SERVER: str, threshold_clustering: float = None, residues_ortho: list = None):
     """
     Reads a CSV file containing PDB IDs, finds corresponding PDB files in the same folder, 
     retrieves generic residue numbers, and writes an updated CSV.
@@ -807,8 +804,13 @@ def clustering_result(df: pd.Series, output_path: os.PathLike, threshold_cluster
     # Write the concatenated DataFrame to a new CSV file
     # Delete all columns with the name "Unnamed"
     concatenated_df = concatenated_df.loc[:, ~concatenated_df.columns.str.contains('^Unnamed')]
-   
+    # Drops temporary columns required for pocannos
+    concatenated_df.drop(columns=[
+    "opm_file", "pdb_out", "Z_CA", "Distance_CA", "Distance_CA_shift",
+    "Mem_out", "Mem_in", "Mem_loc", "Mem_loc_avg", "Mem_distance_avg",
+    "Mem_distance_avg_shift", "Class_state", "gn_residues"
+    ], inplace=True, errors='ignore')
     concatenated_df.to_csv("{}/Annotated_file.csv".format(output_path), index=False)
     return concatenated_df
-    print(" Congrats, you did it!")
+    print(" Congrats, you did it! Please check in your output folder the Annotated_file.csv column 'Site'." )
 

@@ -1,8 +1,8 @@
 """
-main.py: Main script that executes the data processing workflow.
+main.py: Main script that executes the pocannos processing workflow.
 """
 
-from functions import get_GPCRdb_generic_numbers, process_dataframe
+from functions import process_dataframe
 
 
 def main():
@@ -70,9 +70,11 @@ def main():
     if len(sys.argv) >= 5:
         residues_ortho = sys.argv[4]  # Expect residues to be comma-separated
         print(f"Orthosteric residues provided: {residues_ortho}")
-
+    
+    #Define the GPCRDB API
+    GPCRdb_SERVER = 'https://gpcrdb.org/'
     # Process the CSV file with the optional threshold, residues, and output folder
-    csv_file_gn = process_dataframe(csv_file_path, output_folder, threshold, residues_ortho)
+    csv_file_gn = process_dataframe(csv_file_path, output_folder, GPCRdb_SERVER, threshold, residues_ortho)
 
     
     
