@@ -584,7 +584,6 @@ def clustering_result(df: pd.Series, output_path: os.PathLike, threshold_cluster
         for index, row in sites.iterrows():
             #Get all generic residues that are present in Class but separated by list
             sites.at[index, "gn_residues_filtered"] = [num for num in sites.at[index, "gn_residues"] if isinstance(num, (int, float)) and num <= 100]
-            print(sites.at[index, "gn_residues"] )
             
             interactions_bw.append(sites.at[index, "gn_residues_filtered"] )
             #Get the all generic residues that are present in aClass
