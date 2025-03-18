@@ -811,6 +811,7 @@ def clustering_result(df: pd.Series, output_path: os.PathLike, threshold_cluster
     "Mem_distance_avg_shift", "Class_state", "gn_residues"
     ], inplace=True, errors='ignore')
     concatenated_df.to_csv("{}/Annotated_file.csv".format(output_path), index=False)
-    return concatenated_df
     print(" Congrats, you did it! Please check in your output folder the Annotated_file.csv column 'Site'." )
+    return concatenated_df
+    
 
