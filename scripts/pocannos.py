@@ -47,7 +47,7 @@ def main():
     csv_file_path = sys.argv[1]
     
     #Check if path is absoulte
-    if not os.path.isabs(csv_file_path :
+    if not os.path.isabs(csv_file_path):
         print("Error: Output folder path must be absoulte.")
         sys.exit(1)
 
