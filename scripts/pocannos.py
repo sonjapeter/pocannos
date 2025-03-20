@@ -45,9 +45,19 @@ def main():
 
     # Get the file path from command-line arguments
     csv_file_path = sys.argv[1]
+    
+    #Check if path is absoulte
+    if not os.path.isabs(csv_file_path :
+        print("Error: Output folder path must be absoulte.")
+        sys.exit(1)
 
     # Get the output folder from command-line arguments
     output_folder = sys.argv[2]
+    
+    #Check if path is absoulte
+    if not os.path.isabs(output_folder):
+        print("Error: Output folder path must be absoulte.")
+        sys.exit(1)
 
     # Ensure the output folder exists
     if not os.path.exists(output_folder):

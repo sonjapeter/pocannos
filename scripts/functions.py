@@ -49,7 +49,7 @@ def process_dataframe(csv_file_path: os.PathLike, output_folder: os.PathLike, GP
         state= row["state"]
 
         pdb_path = os.path.join(csv_dir, f"{pdb_id}.pdb") 
-        out_path = os.path.join(csv_dir, "{}/{}_gn.pdb".format(output_folder, pdb_id)) # Look for PDB file in the same directory
+        out_path = os.path.join("{}/{}_gn.pdb".format(output_folder, pdb_id)) # Look for PDB file in the same directory
         
         if os.path.exists(pdb_path):
             gen_residues, gen_residues_ortho, opm_file = get_GPCRdb_generic_numbers(pdb_path, out_path, chain, pdb_id, residues, uniprot_id ,state, residues_ortho  =None)

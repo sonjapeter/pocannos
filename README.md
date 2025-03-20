@@ -85,7 +85,7 @@ residue_ortho
 ```bash
 conda activate pocannos_env
 cd scripts
-python ./pocannos.py ../data/Minimal_file_drd1.csv ../output
+python ./pocannos.py folder_path_pocannos/data/Minimal_file_drd1.csv folder_path_pocannos/output
 ```
 
 **Side note:** The folder containing the `csv_file` should also include the corresponding `input_structure.pdb`. The `input_structure.pdb` should have the same name as in the `csv_file` column called "PDB".
